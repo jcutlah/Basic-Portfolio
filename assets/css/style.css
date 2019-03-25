@@ -13,6 +13,7 @@ html, body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
 }
 a:hover {
     text-shadow: 1px 0 #4aaaa5;
@@ -29,6 +30,43 @@ body {
     width: 70%;
     margin: 0 auto;
 }
+
+/* FORM STYLING */
+
+.main-content form {
+    margin: 40px auto;
+}
+
+form label {
+    display: block;
+}
+form input[type="text"],
+form textarea, 
+form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 6px 0;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+form textarea {
+    border-color: rgb(238, 238, 238);
+    border-width: 2px;
+}
+form button {
+    background: #4aaaa5;
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 14px;
+}
+form button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px #ccc;
+    transition: box-shadow .2s ease;
+    font-size: 15px;
+}
+
 .header-container {
     background: #fff;
     /* border-bottom: 2px solid #ccc; */
@@ -76,6 +114,36 @@ body {
     float: left;
     margin: 0 30px 30px 0;
 }
+.portfolio-listing-wrapper {
+    margin-top: 30px;
+}
+.portfolio-item-wrapper {
+    overflow: hidden;
+    width: 30%;
+    float: left;
+    position: relative;
+    margin-bottom: calc(3vw);
+    /* max-height: calc(19vw); */
+    height: calc(19vw);
+}
+.portfolio-item-wrapper img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.portfolio-item-wrapper:nth-child(3n+1), .portfolio-item-wrapper:nth-child(3n+2) {
+    margin-right: 5%;
+}
+.portfolio-item-wrapper .portfolio-label {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    background: #4aaaa5;
+    margin: 0;
+    padding: 13px 0;
+    text-align: center;
+    color: #fff;
+}
+
 .footer {
     text-align: center;
     background: #666;
@@ -99,6 +167,12 @@ body {
     }
     .main-content img {
         max-width: 100%;
+    }
+    .portfolio-item-wrapper {
+        width: 100%;
+        float: none;
+        display: block;
+        margin-bottom: 25px;
     }
 }
 @media (max-width: 500px) {
