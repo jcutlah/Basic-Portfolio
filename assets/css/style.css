@@ -101,6 +101,9 @@ form button:hover {
     margin: 0 auto;
     text-align: center;
 }
+p.about-description {
+    line-height: 2em;
+}
 .body-container {
     flex: 1 0 auto;
 }
@@ -130,6 +133,7 @@ form button:hover {
 .portfolio-item-wrapper img {
     max-width: 420px;
     object-fit: cover;
+    position: relative;
 }
 .portfolio-item-wrapper:nth-child(3n+1), .portfolio-item-wrapper:nth-child(3n+2) {
     margin-right: 5%;
@@ -143,6 +147,7 @@ form button:hover {
     padding: 13px 0;
     text-align: center;
     color: #fff;
+    font-weight: normal;
 }
 
 .footer {
@@ -165,9 +170,6 @@ form button:hover {
     }
 }
 @media (min-width: 768px) {
-    .portfolio-item-wrapper img {
-        position: relative;
-    }
     .portfolio-item-wrapper:first-child img {
         left: -148px;
         bottom: 129px;
@@ -181,13 +183,23 @@ form button:hover {
         bottom: 16px;
     }
     .portfolio-item-wrapper:nth-child(4) img {
-        
+        right: 69px;
+        bottom: 30px;
     }
     .portfolio-item-wrapper:nth-child(5) img {
-        
     }
     .portfolio-item-wrapper:nth-child(6) img {
         
+    }
+}
+@media (max-width: 1300px) {
+    .page-center {
+        width: 85%;
+    }
+}
+@media (max-width: 1200px) {
+    .page-center {
+        width: 95%;
     }
 }
 @media (max-width: 768px) {
@@ -206,7 +218,21 @@ form button:hover {
         float: none;
         display: block;
         margin-bottom: 25px;
-        height: auto;
+        height: calc(53vw);
+    }
+    .portfolio-item-wrapper:first-child img {
+        bottom: 41%;
+    }
+    .portfolio-item-wrapper:nth-child(2) img {
+        bottom: 93%;
+    }
+    .portfolio-item-wrapper:nth-child(3) img {
+        bottom: 4%;
+    }
+    .portfolio-item-wrapper:nth-child(4) img {
+        bottom: 30px;
+    }
+    .portfolio-item-wrapper:nth-child(5) img {
     }
 }
 @media (max-width: 500px) {
