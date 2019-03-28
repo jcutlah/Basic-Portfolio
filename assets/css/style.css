@@ -1,3 +1,42 @@
+@keyframes slideInLeft {
+    0% {
+      right: -700px;
+      opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+      right: 0;
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    0% {
+      left: -700px;
+      opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
 html, body {
     height: 100%;
 }
@@ -29,6 +68,14 @@ body {
     max-width: 960px;
     width: 70%;
     margin: 0 auto;
+}
+.slideInLeft {
+    animation: slideInLeft 1s ease;
+    position: relative;
+}
+.slideInRight {
+    animation: slideInRight 1s ease;
+    position: relative;
 }
 
 /* ############### FORM STYLING ################## */
@@ -95,6 +142,7 @@ form button:hover {
     padding-right: 5px;
 }
 .brand-name {
+    
     float: left;
     background: #4aaaa5;
     color: #fff;
@@ -116,7 +164,7 @@ p.about-description {
 }
 .main-content {
     background: #fff;
-    padding: 0 30px;
+    padding: 0 30px 30px;
     box-shadow: 0 0 27px 5px #fff;
     border: 3px solid #ddd;
 }
