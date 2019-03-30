@@ -216,6 +216,7 @@ p.about-description {
     margin-top: 30px;
     padding: 20px 0;
     color: #fff;
+    border-top: 5px solid #4aaaa5;
 }
 .footer p {
     color: #fff;
